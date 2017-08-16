@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Software for Well-Being</title>
+
+    <style>
+        th {
+            background-color: #999999;
+            color: white;
+        }
+        th, td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background-color: #ffffff;
+        }
+        .title{
+            font-size: 15pt;
+        }
+        .descr{
+            max-width: 240px;
+        }
+        .last-update{
+            white-space: nowrap;
+        }
+        p{
+            font-size: 14pt;
+        }
+        h1, h2{
+            color: #595959;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: #f2f2f2">
+<script src="lib.js"></script>
+
+<h1>Free Software for Well-being</h1>
+<p>A github group for people interested in creating <a href="https://www.gnu.org/philosophy/free-sw.en.html">free software</a> for well-being</p>
+<p>Everyone is welcome to help out (not just programmers), it's very important to get feedback, and to have a good design for the applications</p>
+<h2>Projects</h2>
+<div style="overflow-x: auto;">
+<table>
+    <tr>
+        <th>Screenshot</th>
+        <th>Title</th>
+        <th>Platform</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Source</th>
+        <th>Help needed</th>
+        <th>Last update</th>
+        <th>Tech</th>
+    </tr>
+    <tr>
+        <td><a href="img/kindmind.png"><img src="img/kindmind.png" width="120"></a></td>
+        <td class="title"><a href="https://play.google.com/store/apps/details?id=com.sunyata.kindmind">KindMind</a></td>
+        <td>Android</td>
+        <td class="descr">A mindfulness and self-compassion app that brings awareness to painful feelings and unmet needs</td>
+        <td>Completed</td>
+        <td><a href="https://github.com/SunyataZero/KindMind">Github</a></td>
+        <td>Maintenance, Suggestions for improvement</td>
+        <td class="last-update" id="kindmind-update"></td>
+        <td>Java, Android, SQLite</td>
+    </tr>
+    <tr>
+        <td><a href="img/well-being-diary.png"><img src="img/well-being-diary.png" width="120"></a></td>
+        <td class="title">Well-being Diary</td>
+        <td>GNU+Linux,<br>Windows,<br>MacOS</td>
+        <td class="descr">A diary asking questions from the user and uses tags to support the well-being of the user</td>
+        <td>Under development</td>
+        <td><a href="https://github.com/SunyataZero/buddhist-well-being-prototype-4">Github</a></td>
+        <td>Suggestions for improvement, programming</td>
+        <td id="bwb-update"></td>
+        <td>Python, Qt, SQLite</td>
+    </tr>
+    <tr>
+        <td><a href="img/kind-photos.png"><img src="img/kind-photos.png" width="120"></td>
+        <td class="title">Kind Photos (name?)</td>
+        <td>GNU+Linux,<br>Windows,<br>MacOS</td>
+        <td class="descr">Photos with needs, for marking and filtering</td>
+        <td>Under development</td>
+        <td><a href="https://github.com/SunyataZero/photo-metadata-pt1">Github</a></td>
+        <td>Suggestions for improvement, programming</td>
+        <td id="kp-update"></td>
+        <td>Python, Qt, SQLite</td>
+    </tr>
+    <tr>
+        <td><a href="img/self-care-plan.png"><img src="img/self-care-plan.png" width="120"></a></td>
+        <td class="title">Self-care Plan</td>
+        <td>GNU+Linux,<br>Windows,<br>MacOS</td>
+        <td class="descr"></td>
+        <td>Under development</td>
+        <td><a href="https://github.com/SunyataZero/boring-self-care-challenge-pt1">Github</a></td>
+        <td>Suggestions for improvement, programming</td>
+        <td id="scp-update"></td>
+        <td>Python, Qt, SQLite</td>
+    </tr>
+    <tr>
+        <td><a href="img/wisdom-quotes.png"><img src="img/wisdom-quotes.png" width="120"></a></td>
+        <td class="title"><a href="http://quotes.ihavearrived.org/">Wisdom Quotes</a></td>
+        <td>Web</td>
+        <td class="descr">Quotes displayed without distractions, and in fullscreen</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id="wq-update"></td>
+        <td>Html, JavaScript, (Jekyll)</td>
+    </tr>
+    <tr>
+        <td><a href="img/mindful-pomodoro.png"><img src="img/mindful-pomodoro.png" width="120"></a></td>
+        <td class="title">Mindful Breaks aka Mindful Pomododo</td>
+        <td>GNU+Linux,<br>Windows,<br>MacOS</td>
+        <td class="descr"></td>
+        <td>Under development</td>
+        <td><a href="https://github.com/SunyataZero/mindful-pomodoro-pyqt5">Github</a></td>
+        <td>Suggestions for improvement, programming</td>
+        <td id="mp-update"></td>
+        <td>Python, Qt</td>
+    </tr>
+    <tr>
+        <td><a href="img/mindful-breathing.png"><img src="img/mindful-breathing.png" width="120"></a></td>
+        <td class="title">Mindful Breathing</td>
+        <td>GNU+Linux,<br>Windows,<br>MacOS</td>
+        <td class="descr"></td>
+        <td>Under development</td>
+        <td><a href="https://github.com/SunyataZero/mindful-breathing-pt1">Github</a></td>
+        <td>Suggestions for improvement, programming</td>
+        <td id="mb-update"></td>
+        <td>Python, Qt, SQLite</td>
+    </tr>
+    <tr>
+        <td><a href="img/peaceful-places.png"><img src="img/peaceful-places.png" width="120"></a></td>
+        <td class="title">Peaceful Places</td>
+        <td>Android</td>
+        <td class="descr"></td>
+        <td>Under development</td>
+        <td><a href="https://github.com/SunyataZero/peaceful-places">Github</a></td>
+        <td>Suggestions for improvement, programming</td>
+        <td id="pp-update"></td>
+        <td>Java, Android, SQLite</td>
+    </tr>
+</table>
+</div>
+
+
+<!--
+    <tr>
+        <td></td>
+        <td class="title">Friends</td>
+        <td>GNU+Linux,<br>Windows,<br>MacOS</td>
+        <td class="descr"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="title">Thank You</td>
+        <td>Web</td>
+        <td class="descr"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+-->
+
+<h2>Contact</h2>
+<ul>
+    <li>Join us on <a href="https://fswb.slack.com">slack</a></li>
+    <li>Send an email to tord (dot) dellsen (at) gmail (dot) com</li>
+</ul>
+
+
+<h2>How to help</h2>
+<ul>
+    <li>Try out software under development as an early user ("test pilot")</li>
+    <li>Spread the word about completed software</li>
+</ul>
+
+<script>
+    requestSender("https://api.github.com/repos/SunyataZero/KindMind", "kindmind-update");
+    requestSender("https://api.github.com/repos/SunyataZero/buddhist-well-being-prototype-4", "bwb-update");
+    requestSender("https://api.github.com/repos/SunyataZero/peaceful-places", "pp-update");
+    requestSender("https://api.github.com/repos/SunyataZero/mindful-pomodoro-pyqt5", "mp-update");
+    requestSender("https://api.github.com/repos/SunyataZero/boring-self-care-challenge-pt1", "scp-update");
+    requestSender("https://api.github.com/repos/SunyataZero/photo-metadata-pt1", "kp-update");
+    requestSender("https://api.github.com/repos/SunyataZero/mindful-breathing-pt1", "mb-update");
+</script>
+    <!--
+    "https://api.github.com/repos/SunyataZero/buddhist-well-being-prototype-4"
+    -->
+</body>
+</html>
+
+<!--
+sorting a table:
+https://www.w3schools.com/howto/howto_js_sort_table.asp
+
+
+-->
