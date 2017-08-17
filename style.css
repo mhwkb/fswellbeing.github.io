@@ -1,0 +1,30 @@
+
+th {
+    background-color: #999999;
+    color: white;
+}
+th, td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+tr:hover {
+    background-color: #ffffff;
+}
+.title{
+    font-size: 15pt;
+}
+.descr{
+    max-width: 240px;
+}
+.last-update{
+    white-space: nowrap;
+}
+p{
+    font-size: 15pt;
+}
+h1, h2{
+    color: #595959;
+}
+
+
